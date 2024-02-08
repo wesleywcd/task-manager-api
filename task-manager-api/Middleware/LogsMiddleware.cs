@@ -5,7 +5,6 @@ namespace TaskAPI.Middleware;
 public class LogsMiddleware
 {
     private readonly RequestDelegate _req;
-
     public LogsMiddleware(RequestDelegate req)
     {
         _req = req;
