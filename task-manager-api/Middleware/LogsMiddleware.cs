@@ -13,7 +13,7 @@ public class LogsMiddleware
     
     public async Task Invoke(HttpContext context)
     {
-        string logMessage = $"{DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss")} - {context.Request.Method}: {context.Request.Path}{context.Request.QueryString}";
+        string logMessage = $"{DateTime.UtcNow.ToString("yyyy-dd-MM HH:mm:ss")} - {context.Request.Method}: {context.Request.Path}{context.Request.QueryString}";
         LogToFile(logMessage);
 
         await _req(context);
