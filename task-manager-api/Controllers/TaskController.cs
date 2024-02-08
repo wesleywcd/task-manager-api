@@ -47,6 +47,20 @@ public class TaskController : ControllerBase
 
         return Ok(_mapper.Map<List<TaskView>>(list));
     }
+    
+    [HttpGet("chart", Name = "GetChart")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult GetChart()
+    {
+        var totalTasks = _context.Tasks.Count();
+        
+        var list = _context.Tasks
+            .GroupBy(t => t.Priority)
+            .Select(g => new { key = g.Key, value = ((double)g.Count() / totalTasks) * 100 })
+            .ToList();
+    
+        return Ok(list);
+    }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
