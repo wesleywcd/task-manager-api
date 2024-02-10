@@ -41,3 +41,11 @@
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/obj/Debug/net7.0/task-manager-api.pdb
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/obj/Debug/net7.0/task-manager-api.genruntimeconfig.cache
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/obj/Debug/net7.0/ref/task-manager-api.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

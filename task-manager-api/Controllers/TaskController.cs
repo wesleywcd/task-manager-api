@@ -23,22 +23,14 @@ public class TaskController : ControllerBase
 
     [HttpGet(Name = "GetTasks")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public IActionResult Get([FromQuery] int offset, int limit, string orderBy = "id")
+    public IActionResult Get([FromQuery] int offset, int limit, Priority? priority, Status? status)
     {
-        IQueryable<TaskModel> query = _context.Tasks;
+        IEnumerable<TaskModel> query = _context.Tasks;
 
-        switch (orderBy)
-        {
-            case "title":
-                query = query.OrderBy(t => t.Title);
-                break;
-            case "priority":
-                query = query.OrderBy(t => t.Priority);
-                break;
-            case "dueDate":
-                query = query.OrderBy(t => t.DueDate);
-                break;
-        }
+        if (priority.HasValue)
+            query = query.Where(x => x.Priority == priority);
+        if (status.HasValue)
+            query = query.Where(x => x.Status == status);
         
         var list = query
             .Skip(offset)
@@ -62,10 +54,10 @@ public class TaskController : ControllerBase
         return Ok(list);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "GetById")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var task = _context.Tasks.SingleOrDefault(x=> x.Id.Equals(id));
         if (task == null)
