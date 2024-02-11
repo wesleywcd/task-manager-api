@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskAPI.Data;
 using TaskAPI.Data.Entities;
@@ -22,6 +23,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet(Name = "GetTasks")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Get([FromQuery] int offset, int limit, Priority? priority, Status? status)
     {
@@ -41,6 +43,7 @@ public class TaskController : ControllerBase
     }
     
     [HttpGet("chart", Name = "GetChart")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetChart()
     {
@@ -55,6 +58,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet("{id}", Name = "GetById")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult GetById(int id)
@@ -66,6 +70,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status201Created)]
     public IActionResult Create(TaskView view)
     {
@@ -80,6 +85,7 @@ public class TaskController : ControllerBase
     }
     
     [HttpPut]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Update(TaskView view)
@@ -101,6 +107,7 @@ public class TaskController : ControllerBase
     }
     
     [HttpDelete("{id}")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Delete(int id)

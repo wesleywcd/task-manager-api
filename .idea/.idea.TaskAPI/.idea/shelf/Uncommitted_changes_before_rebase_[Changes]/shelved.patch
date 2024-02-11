@@ -1,0 +1,13 @@
+Index: task-manager-api/log.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2024-02-08 10:39:27 - GET: /api/tasks?orderBy=id\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/task-manager-api/log.txt b/task-manager-api/log.txt
+--- a/task-manager-api/log.txt	(revision 22255fbfa18acd1ed559e8c19d3f5d1efbd85193)
++++ b/task-manager-api/log.txt	(date 1707389131559)
+@@ -1,1 +1,2 @@
+ 2024-02-08 10:39:27 - GET: /api/tasks?orderBy=id
++2024-02-08 10:45:31 - GET: /api/tasks?orderBy=id

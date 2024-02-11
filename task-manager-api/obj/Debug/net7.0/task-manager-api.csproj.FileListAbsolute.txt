@@ -49,3 +49,4 @@
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/bin/Debug/net7.0/BCrypt.Net-Next.dll

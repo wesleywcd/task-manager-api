@@ -9,5 +9,6 @@ public class MapperConfig : Profile
     public MapperConfig()
     {
         CreateMap<TaskModel, TaskView>().ReverseMap();
+        CreateMap<UserModel, UserView>().ReverseMap();
     }
 }

@@ -22,7 +22,7 @@ public class LogsMiddleware
     {
         using (StreamWriter writer = new StreamWriter("log.txt", true, Encoding.UTF8))
         {
-            // writer.WriteLine(message);
+            writer.WriteLine(message);
         }
     }
 }

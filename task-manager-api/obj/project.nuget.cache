@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "I28e/k4dcktmvKvS/3+9XMm4K+lwMiWcksH8FxuyDQCK1zWSbmDJeZqPvENyOVpsXgsSF2gSIn42K3AXqKKrrw==",
+  "dgSpecHash": "vNmiHwRNz99PMDF4OOnv0nvbqvQnn2epf+F75dhEWChxeGVidBDp3GIaA+77i/RUsZZwMPw0EwBhgu3MTs7MSw==",
   "success": true,
   "projectFilePath": "/Users/wesley/Projects/Repositorios/Git/TaskManager/TaskAPI/task-manager-api/task-manager-api.csproj",
   "expectedPackageFiles": [
     "/Users/wesley/.nuget/packages/automapper/13.0.0/automapper.13.0.0.nupkg.sha512",
+    "/Users/wesley/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/wesley/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/wesley/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.1/microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
     "/Users/wesley/.nuget/packages/microsoft.aspnetcore.openapi/7.0.5/microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
